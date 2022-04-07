@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+.nav img{
+    float: right;
+    justify-content: flex-end;
+    align-items: center
+}
+.navegador-texto{
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+.navegador-texto
+
+nav img{
+    float: right;}
+    
+    
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    color: black;
+    
+    
+}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white; 
+    background-color: #A63EC5;
+    
+}
+
+button:hover{
+    background-color: #A63EC5;
+    
+}
+/* .container{
+    max-width: 1400px;
+    margin: auto;
+} */
+header{
+    background-color: #A63EC5;
+    margin: 0;
+    padding: 0px;
+
+} 
+.navegador-texto{
+    text-align: right;
+}
+
+header.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header a{
+    padding: 2px 12px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: #f7f7f7;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("img/hero.jpeg");
+    image-orientation: center;
+    height: 800px;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#laser h2{
+    text-align: center;
+    padding: 10px 12px;
+    font-weight: bold;
+    color: #A63EC5;
+}
+    #laser p{
+        text-align: center;
+        padding: 10px 12px;
+        font-weight:bold;
+        color: rgb(0, 0, 0);
+}
+#nuestros-profesionales{
+    background-color: #46244C;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-profesionales .container{
+padding: 150px 12px;
+}
+#profesionales h2{
+    margin-top: 0;  
+    font-size: 3,5em;
+}
+#profesionales h3{
+    margin-top: 0;   
+}
+
+#nuestros-profesionales .carta1{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 20px;
+}
+#nuestros-profesionales .carta2{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 20px;
+}
+#nuestros-profesionales .carta3{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 20px;
+}
+.carta1:first-child:first-child{
+    background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("img/cosmetologa.jpg");
+}
+
+.carta2:nth-child(2){
+    background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("img/reiki.jpg");
+}
+
+.carta3:nth-child(3){
+    background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("img/masoterapia.jpg");
+}
+
+footer{
+    background-color: #CE49BF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer p{
+    margin: 0px;}
+
+    .profesionales{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1%;
+        justify-items: center;
+        align-items: center;
+        grid-area: "carta1 carta2 carta3";
+    }
+    
+    .carta1 { grid-area: 1 / 1 / 2 / 2; 
+         width: 80%;}
+    .carta2 { grid-area: 1 / 2 / 2 / 3;    
+         width: 80%; }
+    .carta3 { grid-area: 1 / 3 / 2 / 4;    
+         width: 80%; }
+
+@media (max-width:480px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+     header .container{
+         flex-direction: row;
+     }
+     
+     header nav{
+        flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+
+    }
+    
+    #laser .img-container{
+        background:linear-gradient(  rgba(0, 0, 0, 0.5),   rgba(0, 0, 0, 0.5)),  url("img/depilacion_laser.png");
+        background-size: cover;
+        background-position: center center;}
+    
+        .profesionales {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .carta1 { grid-area: 1 / 1 / 2 / 2; }
+            .carta2 { grid-area: 2 / 1 / 3 / 2; }
+            .carta3 { grid-area: 3 / 1 / 4 / 2; }
+
+
+}
+.laser p{
+    animation-name: laser p;
+    animation-duration: 60s;
+
+}
+
+@keyframes animacionNosotros1 {
+0% {background-color: blue;}
+50% {background-color: blueviolet;}
+100% {background-color: aqua;}
+    
+}
