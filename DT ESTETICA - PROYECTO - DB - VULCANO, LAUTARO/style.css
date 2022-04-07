@@ -225,13 +225,13 @@ footer p{
 
 
 }
-.laser p{
-    animation-name: laser p;
+.laser-p{
+    animation-name: laser-p;
     animation-duration: 60s;
 
 }
 
-@keyframes animacionNosotros1 {
+@keyframes laser-p {
 0% {background-color: blue;}
 50% {background-color: blueviolet;}
 100% {background-color: aqua;}
